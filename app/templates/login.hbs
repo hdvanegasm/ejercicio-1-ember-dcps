@@ -1,0 +1,8 @@
+<div class="form">
+  <label for="username">Username:</label>{{input type="text" name="username" value=username}}
+  <label for="password">Password:</label>{{input type="password" name="username" value=password}}
+  <button type="button" {{action 'login'}}>Login</button>
+</div>
+<div class="login-response">{{response}}</div>
+
+{{outlet}}
