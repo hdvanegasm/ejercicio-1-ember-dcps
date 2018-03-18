@@ -1,1 +1,25 @@
+<form class="register-form">
+
+  <div class="form-field">
+    <label for="name">Name: </label>
+    {{input type="text" name="name" value=name}}
+  </div>
+
+  <div class="form-field">
+    <label for="salary">Salary: </label>
+    {{input type="text" name="salary" value=salary}}
+  </div>
+
+  <div class="form-field">
+    <label for="gender">Gender: </label>
+    {{input type="text" name="gender" value=gender}}
+  </div>
+
+  <button type="button" {{action 'register'}}>Register</button>
+</form>
+
+<div class="response">
+  {{response}}
+</div>
+
 {{outlet}}

@@ -9,5 +9,5 @@ export default Route.extend({
     if(!isLogedIn) {
       this.replaceWith('login');
     }
-  }
+  },
 });
