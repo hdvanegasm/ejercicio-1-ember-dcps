@@ -52,7 +52,6 @@ export default Controller.extend({
     },
 
     logout() {
-      console.log('oe');
       localStorage.setItem("userLogedIn", 'f');
       localStorage.setItem("username", null);
       this.get('loginStatus').logedIn = false;
