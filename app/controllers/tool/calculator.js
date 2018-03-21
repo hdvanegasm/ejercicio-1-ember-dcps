@@ -10,7 +10,7 @@ export default Controller.extend({
         this.set('loginResponseClass', 'response-error');
       } else {
         this.set('result', parseInt(number1) + parseInt(number2));
-        this.set('loginResponseClass', 'response-error');
+        this.set('loginResponseClass', 'response-success');
       }
     }
   }

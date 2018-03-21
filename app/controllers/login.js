@@ -36,13 +36,27 @@ export default Controller.extend({
         this.set('response', 'Error!')
         this.set('password', '');
         this.set('loginResponseClass', 'response-error');
+        localStorage.setItem("userLogedIn", 'f');
+        localStorage.setItem("username", null);
+        this.get('loginStatus').logedIn = false;
+        this.get('loginStatus').username = null;
       } else {
         this.set('response', 'Success!')
         this.get('loginStatus').username = username;
         this.get('loginStatus').logedIn = true;
         this.set('loginResponseClass', 'response-success');
+        localStorage.setItem("userLogedIn", 't');
+        localStorage.setItem("username", username);
       }
 
+    },
+
+    logout() {
+      console.log('oe');
+      localStorage.setItem("userLogedIn", 'f');
+      localStorage.setItem("username", null);
+      this.get('loginStatus').logedIn = false;
+      this.get('loginStatus').username = null;
     }
   }
 });
