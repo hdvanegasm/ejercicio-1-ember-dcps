@@ -3,6 +3,6 @@
   <label for="password">Password:</label>{{input type="password" name="password" value=password}}
   <button type="button" {{action 'login'}}>Login</button>
 </div>
-<div class="login-response">{{response}}</div>
+<div class={{loginResponseClass}}>{{response}}</div>
 
 {{outlet}}

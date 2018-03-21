@@ -25,8 +25,10 @@ export default Controller.extend({
         this.set('name', '');
         this.set('salary', '');
         this.set('gender', '');
+        this.set('loginResponseClass', 'response-success');
       } else {
         this.set('response', 'There are fields with errors');
+        this.set('loginResponseClass', 'response-error');
       }
     }
   }

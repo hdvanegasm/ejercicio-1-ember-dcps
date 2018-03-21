@@ -35,10 +35,12 @@ export default Controller.extend({
       if(!result || result.password !== password) {
         this.set('response', 'Error!')
         this.set('password', '');
+        this.set('loginResponseClass', 'response-error');
       } else {
         this.set('response', 'Success!')
         this.get('loginStatus').username = username;
         this.get('loginStatus').logedIn = true;
+        this.set('loginResponseClass', 'response-success');
       }
 
     }

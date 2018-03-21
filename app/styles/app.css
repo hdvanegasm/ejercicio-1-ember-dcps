@@ -2,3 +2,11 @@
   display: inline-block;
   margin: 1em;
 }
+
+.response-error {
+  background-color: #ff6666
+}
+
+.response-success {
+  background-color: #00cc99;
+}
