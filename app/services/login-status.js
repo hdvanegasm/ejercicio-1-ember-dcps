@@ -2,7 +2,7 @@ import Service from '@ember/service';
 
 export default Service.extend({
   logedIn: false,
-  username: "NotLoggedIn",
+  username: "",
 
   init() {
     this._super(...arguments);
